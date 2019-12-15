@@ -217,6 +217,10 @@ hr {
     margin-top: 50px;
   }
   .logos {
+    position: absolute;
+    height: 1%;
+    top: 1%;
+    left: 1%;
     visibility: hidden;
   }
   .right {
@@ -225,5 +229,11 @@ hr {
   .rightDivider {
     width: 100%;
     float: none;
+  }
+  .leftDiv {
+    visibility: hidden;
+  }
+  .rightDiv {
+    visibility: hidden;
   }
 }
