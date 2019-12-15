@@ -1,0 +1,229 @@
+@font-face {
+  font-family: "le-murmure";
+  src: url("./assets/fonts/le-murmure.otf") format("opentype");
+}
+@font-face {
+  font-family: "Charter-BI";
+  src: url("./assets/fonts/Charter-BI.otf") format("opentype");
+}
+@font-face {
+  font-family: "Charter-R";
+  src: url("./assets/fonts/Charter-R.otf") format("opentype");
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 25% 24% 1% 1% 18% 31%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "leftPage leftPage cl cr rightPageImg rightPage"
+    "leftPage leftPage cl cr rightPageImg rightPage"
+    "leftPage leftPage cl cr rightPageImg rightPage";
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  font-family: "le-murmure", serif;
+  border: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.leftPage {
+  padding: 0 3em;
+  color: white;
+  grid-area: leftPage;
+}
+.rightPage {
+  padding: 0 3em;
+  color: white;
+  grid-area: rightPage;
+}
+h1 {
+  display: block;
+  font-size: 9em;
+  text-shadow: 3px 3px 0 rgb(0, 0, 0);
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+}
+.right {
+  text-align: right;
+}
+
+hr {
+  border: 0.5px solid black;
+  border-radius: 5px;
+  width: 100%;
+  margin: 1.2em auto;
+}
+.rightDivider {
+  width: 85%;
+  float: right;
+}
+.logos {
+  position: absolute;
+  height: 90%;
+  top: 1.5%;
+  left: 52%;
+}
+.about-thing-projects {
+  .linkurl {
+    text-align: right;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Charter-BI", serif;
+    font-size: 4.5em;
+    text-shadow: 3px 3px 0 rgb(0, 0, 0);
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    display: block;
+    margin: 0.2em auto;
+    transition: color 0.1s linear;
+    &:hover {
+      color: #401b33;
+    }
+  }
+  p {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: black;
+    font-family: "Charter-R", serif;
+    margin-bottom: 10px;
+  }
+}
+.about-thing {
+  .linkurl {
+    -webkit-font-smoothing: antialiased;
+    font-family: "Charter-BI", serif;
+    font-size: 4.5em;
+    text-shadow: 3px 3px 0 rgb(0, 0, 0);
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    display: block;
+    margin: 0.2em auto;
+    transition: color 0.1s linear;
+    &:hover {
+      color: #d9043d;
+    }
+  }
+  p {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: black;
+    font-family: "Charter-R", serif;
+    margin-bottom: 10px;
+  }
+}
+.contact {
+  margin-top: -35px;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: black;
+  font-family: "Charter-R", serif;
+  a {
+    font-family: "Charter-R", serif;
+  }
+}
+.leftDiv {
+  grid-area: cr;
+  height: 100%;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(87, 87, 87, 1) 16%,
+    rgba(255, 255, 255, 0.26234243697478987) 52%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+.rightDiv {
+  grid-area: cl;
+  height: 100%;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.26234243697478987) 48%,
+    rgba(255, 255, 255, 0) 53%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+@media (max-width: 100em) {
+  .about-thing-projects {
+    .linkurl {
+      font-size: 3.5em;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+  .about-thing {
+    .linkurl {
+      font-size: 3.5em;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+  .logos {
+    position: absolute;
+    height: 93%;
+    top: 3%;
+    left: 52%;
+  }
+}
+@media (max-width: 55em) {
+  h1 {
+    font-size: 4em;
+  }
+  .main {
+    font-size: 0.5em;
+  }
+  .about-thing-projects {
+    .linkurl {
+      text-align: left;
+      font-size: 3em;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+  .about-thing {
+    .linkurl {
+      font-size: 3em;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+  .contact {
+    font-size: 1em;
+    text-align: center;
+  }
+  body {
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "leftPage leftPage"
+      "leftPage leftPage"
+      "leftPage leftPage"
+      "rightPage rightPage"
+      "rightPage rightPage"
+      "rightPage rightPage";
+  }
+  .rightPage {
+    margin-top: 50px;
+  }
+  .logos {
+    visibility: hidden;
+  }
+  .right {
+    text-align: left;
+  }
+  .rightDivider {
+    width: 100%;
+    float: none;
+  }
+}
