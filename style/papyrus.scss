@@ -14,7 +14,7 @@ body {
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: 25% 24% 1% 1% 18% 31%;
+  grid-template-columns: 25% 23.5% 1.5% 1.5% 17.5% 31%;
   grid-template-rows: auto;
   grid-template-areas:
     "leftPage leftPage cl cr rightPageImg rightPage"
@@ -129,13 +129,13 @@ hr {
   grid-area: cr;
   height: 100%;
   width: 100%;
-  background: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
   background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(87, 87, 87, 1) 16%,
-    rgba(255, 255, 255, 0.26234243697478987) 52%,
-    rgba(255, 255, 255, 0) 100%
+    270deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.26234243697478987) 19%,
+    rgba(255, 255, 255, 0) 27%,
+    rgba(78, 78, 78, 0.7721463585434174) 100%
   );
 }
 .rightDiv {
@@ -146,9 +146,9 @@ hr {
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.26234243697478987) 48%,
-    rgba(255, 255, 255, 0) 53%,
-    rgba(0, 0, 0, 1) 100%
+    rgba(255, 255, 255, 0.26234243697478987) 19%,
+    rgba(255, 255, 255, 0) 27%,
+    rgba(78, 78, 78, 0.7721463585434174) 100%
   );
 }
 @media (max-width: 100em) {
