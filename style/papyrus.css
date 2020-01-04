@@ -43,6 +43,8 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: leftPage;
+  -webkit-box-shadow: 5px 0px 9px 4px rgba(0, 0, 0, 0.62);
+  box-shadow: 5px 0px 9px 4px rgba(0, 0, 0, 0.62);
 }
 
 .rightPage {
@@ -100,7 +102,7 @@ hr {
 }
 
 .about-thing-projects .linkurl:hover {
-  color: #401b33;
+  color: #8254eb;
 }
 
 .about-thing-projects p {
@@ -125,7 +127,7 @@ hr {
 }
 
 .about-thing .linkurl:hover {
-  color: #d9043d;
+  color: #8254eb;
 }
 
 .about-thing p {
@@ -146,30 +148,6 @@ hr {
 
 .contact a {
   font-family: "Charter-R", serif;
-}
-
-.leftDiv {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 4;
-  grid-area: cr;
-  height: 100%;
-  width: 100%;
-  background: white;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), color-stop(19%, rgba(255, 255, 255, 0.262342)), color-stop(27%, rgba(255, 255, 255, 0)), to(rgba(78, 78, 78, 0.772146)));
-  background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.262342) 19%, rgba(255, 255, 255, 0) 27%, rgba(78, 78, 78, 0.772146) 100%);
-}
-
-.rightDiv {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 3;
-  grid-area: cl;
-  height: 100%;
-  width: 100%;
-  background: white;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(19%, rgba(255, 255, 255, 0.262342)), color-stop(27%, rgba(255, 255, 255, 0)), to(rgba(78, 78, 78, 0.772146)));
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.262342) 19%, rgba(255, 255, 255, 0) 27%, rgba(78, 78, 78, 0.772146) 100%);
 }
 
 @media (max-width: 100em) {

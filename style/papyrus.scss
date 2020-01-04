@@ -35,6 +35,8 @@ body {
   padding: 0 3em;
   color: white;
   grid-area: leftPage;
+  -webkit-box-shadow: 5px 0px 9px 4px rgba(0, 0, 0, 0.62);
+  box-shadow: 5px 0px 9px 4px rgba(0, 0, 0, 0.62);
 }
 .rightPage {
   padding: 0 3em;
@@ -81,7 +83,7 @@ hr {
     margin: 0.2em auto;
     transition: color 0.1s linear;
     &:hover {
-      color: #401b33;
+      color: #8254eb;
     }
   }
   p {
@@ -104,7 +106,7 @@ hr {
     margin: 0.2em auto;
     transition: color 0.1s linear;
     &:hover {
-      color: #d9043d;
+      color: #8254eb;
     }
   }
   p {
@@ -125,32 +127,7 @@ hr {
     font-family: "Charter-R", serif;
   }
 }
-.leftDiv {
-  grid-area: cr;
-  height: 100%;
-  width: 100%;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    270deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.26234243697478987) 19%,
-    rgba(255, 255, 255, 0) 27%,
-    rgba(78, 78, 78, 0.7721463585434174) 100%
-  );
-}
-.rightDiv {
-  grid-area: cl;
-  height: 100%;
-  width: 100%;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.26234243697478987) 19%,
-    rgba(255, 255, 255, 0) 27%,
-    rgba(78, 78, 78, 0.7721463585434174) 100%
-  );
-}
+
 @media (max-width: 100em) {
   .about-thing-projects {
     .linkurl {
